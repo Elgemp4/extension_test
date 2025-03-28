@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Side Panel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Sidepanel</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to the Side Panel</h1>
-  <p>This is the content of the side panel.</p>
+    <div class="chat-header">
+        Chatbot Assistant
+    </div>
+    
+    <div class="chat-container" id="chatContainer">
+        <div class="message bot-message">
+            Hello! I'm your chatbot assistant. How can I help you today?
+        </div>
+        
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    
+    <div class="chat-input-container">
+        <textarea 
+            class="chat-input" 
+            id="userInput" 
+            placeholder="Type your message here..." 
+            rows="1"
+        ></textarea>
+        <button id="sendButton" class="send-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+
+    <script src="chatbot.js"></script>
 </body>
 </html>
